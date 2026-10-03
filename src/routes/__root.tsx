@@ -78,9 +78,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shihab — Digital Marketing Specialist" },
+      { title: "Shihab Sahad — Digital Marketing Specialist" },
       { name: "description", content: "Digital marketing, social media, content and websites that grow businesses." },
-      { name: "author", content: "Shihab" },
+      { name: "author", content: "Shihab Sahad" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
