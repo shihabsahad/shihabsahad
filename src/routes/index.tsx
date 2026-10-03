@@ -42,7 +42,7 @@ const services = [
 ];
 
 const work = [
-  { img: w1, n: "Nujoud General Contracting", tags: ["Digital Marketing", "Social Media", "Content Creation", "Website", "Lead Generation"], d: "Built a complete online presence for a contracting firm — from social content to a lead-focused website.", u: "" },
+  { img: w1, n: "Nujoud General Contracting", tags: ["Digital Marketing", "Social Media", "Content Creation", "Website", "Lead Generation"], d: "Built a complete online presence for a contracting firm — from social content to a lead-focused website.", u: "https://www.nujoudgeneralcontracting.com" },
   { img: w2, n: "Brand Yatra", tags: ["Digital Marketing", "Social Media", "Content Strategy", "Brand Marketing"], d: "Content strategy and brand marketing that grew an engaged, consistent social audience.", u: "https://www.instagram.com/reel/DO5ynnFj07z/?stkn=MTBiMWd4bmx4NGl4cw==" },
   { img: w3, n: "Gate Way Associates", tags: ["Digital Marketing", "Content Creation", "Social Media"], d: "Professional content and social media positioning for a growing business consultancy.", u: "" },
   { img: w4, n: "Prestige", tags: ["Digital Marketing", "Content & Social Media"], d: "Premium content and social media work crafted to reflect a refined brand identity.", u: "" },
