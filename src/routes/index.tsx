@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 const EMAIL = "mailto:shihabtm06@gmail.com";
 const WA = "https://wa.me/916235371289";
 const LI = "https://www.linkedin.com/in/shihabsahad/";
-const IG = "https://instagram.com/";
+const IG = "https://www.instagram.com/shihab.sahad?stkn=Mjkweml6azFjZzVs";
 
 const nav = [
   ["Home", "home"], ["About", "about"], ["Services", "services"],
@@ -256,7 +256,7 @@ function Index() {
                   </div>
                   <h3 className="mt-5 text-2xl font-semibold md:text-3xl">{p.n}</h3>
                   <p className="mt-3 text-muted-foreground">{p.d}</p>
-                  <a href="#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:gap-3">
+                  <a href={p.u || "#contact"} {...(p.u ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:gap-3">
                     View Project <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </div>
