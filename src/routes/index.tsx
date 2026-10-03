@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 const EMAIL = "mailto:shihabtm06@gmail.com";
 const WA = "https://wa.me/916235371289";
 const LI = "https://www.linkedin.com/in/shihabsahad/";
-const IG = "https://instagram.com/";
+const IG = "https://www.instagram.com/shihab.sahad?stkn=Mjkweml6azFjZzVs";
 
 const nav = [
   ["Home", "home"], ["About", "about"], ["Services", "services"],
@@ -42,10 +42,10 @@ const services = [
 ];
 
 const work = [
-  { img: w1, n: "Nujoud General Contracting", tags: ["Digital Marketing", "Social Media", "Content Creation", "Website", "Lead Generation"], d: "Built a complete online presence for a contracting firm — from social content to a lead-focused website." },
-  { img: w2, n: "Brand Yatra", tags: ["Digital Marketing", "Social Media", "Content Strategy", "Brand Marketing"], d: "Content strategy and brand marketing that grew an engaged, consistent social audience." },
-  { img: w3, n: "Gate Way Associates", tags: ["Digital Marketing", "Content Creation", "Social Media"], d: "Professional content and social media positioning for a growing business consultancy." },
-  { img: w4, n: "Prestige", tags: ["Digital Marketing", "Content & Social Media"], d: "Premium content and social media work crafted to reflect a refined brand identity." },
+  { img: w1, n: "Nujoud General Contracting", tags: ["Digital Marketing", "Social Media", "Content Creation", "Website", "Lead Generation"], d: "Built a complete online presence for a contracting firm — from social content to a lead-focused website.", u: "" },
+  { img: w2, n: "Brand Yatra", tags: ["Digital Marketing", "Social Media", "Content Strategy", "Brand Marketing"], d: "Content strategy and brand marketing that grew an engaged, consistent social audience.", u: "https://www.instagram.com/reel/DO5ynnFj07z/?stkn=MTBiMWd4bmx4NGl4cw==" },
+  { img: w3, n: "Gate Way Associates", tags: ["Digital Marketing", "Content Creation", "Social Media"], d: "Professional content and social media positioning for a growing business consultancy.", u: "" },
+  { img: w4, n: "Prestige", tags: ["Digital Marketing", "Content & Social Media"], d: "Premium content and social media work crafted to reflect a refined brand identity.", u: "" },
 ];
 
 const steps = [
@@ -256,7 +256,7 @@ function Index() {
                   </div>
                   <h3 className="mt-5 text-2xl font-semibold md:text-3xl">{p.n}</h3>
                   <p className="mt-3 text-muted-foreground">{p.d}</p>
-                  <a href="#contact" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:gap-3">
+                  <a href={p.u || "#contact"} {...(p.u ? { target: "_blank", rel: "noopener noreferrer" } : {})} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:gap-3">
                     View Project <ArrowUpRight className="h-4 w-4" />
                   </a>
                 </div>
