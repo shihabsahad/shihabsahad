@@ -13,9 +13,9 @@ import w4 from "@/assets/work-4.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Shihab — Digital Marketing Specialist | Portfolio" },
+      { title: "Shihab Sahad — Digital Marketing Specialist | Portfolio" },
       { name: "description", content: "I help businesses grow through digital marketing, social media management, content creation and conversion-focused websites." },
-      { property: "og:title", content: "Shihab — Digital Marketing Specialist" },
+      { property: "og:title", content: "Shihab Sahad — Digital Marketing Specialist" },
       { property: "og:description", content: "Strategy, content, social media and websites that drive real business growth." },
     ],
   }),
@@ -111,7 +111,7 @@ function Index() {
       {/* NAV */}
       <header className={`fixed inset-x-0 top-0 z-50 transition ${scrolled ? "glass border-x-0 border-t-0" : ""}`}>
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Main">
-          <a href="#home" className="font-display text-xl font-semibold">Shihab<span className="text-primary">.</span></a>
+          <a href="#home" className="font-display text-xl font-semibold">Shihab Sahad<span className="text-primary">.</span></a>
           <ul className="hidden gap-8 md:flex">
             {nav.map(([l, id]) => (
               <li key={id}><a href={`#${id}`} className="text-sm text-muted-foreground transition hover:text-foreground">{l}</a></li>
@@ -139,7 +139,7 @@ function Index() {
           <div className="absolute -top-40 right-0 h-[600px] w-[600px] bg-spot" aria-hidden />
           <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-5 pb-20 md:grid-cols-[1.2fr_1fr] md:px-8">
             <div className="reveal">
-              <Eyebrow>Available for new projects</Eyebrow>
+              <Eyebrow>Who I Am</Eyebrow>
               <h1 className="mt-6 text-5xl font-semibold leading-[1.02] md:text-7xl lg:text-[5.5rem]">
                 I Help Businesses <span className="text-gradient">Grow</span> Through Digital Marketing
               </h1>
@@ -157,7 +157,7 @@ function Index() {
             <div className="reveal relative mx-auto w-full max-w-md">
               <div className="absolute -inset-6 rounded-[2.5rem] bg-spot blur-2xl" aria-hidden />
               <div className="relative overflow-hidden rounded-[2rem] border border-border glow-ring">
-                <img src={portrait} alt="Shihab, Digital Marketing Specialist" width={896} height={1152} className="h-full w-full object-cover" />
+                <img src={portrait} alt="Shihab Sahad, Digital Marketing Specialist" width={960} height={1280} className="h-full w-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
               </div>
               <div className="glass absolute -left-4 bottom-10 rounded-2xl px-4 py-3 md:-left-10">
@@ -188,7 +188,7 @@ function Index() {
             </div>
             <div className="reveal">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I'm <span className="text-foreground">Shihab</span>, a Digital Marketing Specialist with hands-on experience in digital marketing, social media management, content creation and website development. I work with businesses to improve their online presence, reach the right audience and generate meaningful results through digital strategies.
+                I'm <span className="text-foreground">Shihab Sahad</span>, a Digital Marketing Specialist with hands-on experience in digital marketing, social media management, content creation and website development. I work with businesses to improve their online presence, reach the right audience and generate meaningful results through digital strategies.
               </p>
               <ul className="mt-8 grid grid-cols-2 gap-3">
                 {["Digital Marketing Experience", "Social Media Management", "Content Creation", "Website Design", "Lead Generation", "Brand Growth"].map((h) => (
@@ -364,7 +364,7 @@ function Index() {
 
       <footer className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-5 py-10 md:flex-row md:px-8">
-          <p className="font-display text-lg font-semibold">Shihab <span className="text-muted-foreground font-normal">— Digital Marketing Specialist</span></p>
+          <p className="font-display text-lg font-semibold">Shihab Sahad <span className="text-muted-foreground font-normal">— Digital Marketing Specialist</span></p>
           <div className="flex gap-3">
             {[[Instagram, IG, "Instagram"], [Linkedin, LI, "LinkedIn"], [MessageCircle, WA, "WhatsApp"], [Mail, EMAIL, "Email"]].map(([I, h, l]) => {
               const Icon = I as typeof Mail;
@@ -375,7 +375,7 @@ function Index() {
               );
             })}
           </div>
-          <p className="text-sm text-muted-foreground">© 2026 Shihab. All Rights Reserved.</p>
+          <p className="text-sm text-muted-foreground">© 2026 Shihab Sahad. All Rights Reserved.</p>
         </div>
       </footer>
     </div>
