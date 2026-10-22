@@ -7,3 +7,5 @@
 
 ## Hero photo
 - [x] Replace hero portrait with the newly uploaded photo, keeping card, blue glow, border and "Growth-focused" badge unchanged.
+- [x] Diagnose the custom-domain image failure and use the original photo's public production address.
+- [ ] Verify the repaired photo after deployment on Lovable and the externally hosted custom domain.

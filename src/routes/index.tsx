@@ -4,7 +4,7 @@ import {
   ArrowUpRight, Menu, X, Mail, MessageCircle, Linkedin, Instagram, Megaphone, Users,
   PenTool, Monitor, MapPin, Target, Check, Quote, Sparkles, TrendingUp, Briefcase, Lightbulb,
 } from "lucide-react";
-import portraitAsset from "@/assets/shihab-portrait.jpeg.asset.json";
+import { portraitUrl } from "@/lib/portrait";
 import w1 from "@/assets/work-1.jpg";
 import w2 from "@/assets/work-2.jpg";
 import w3 from "@/assets/work-3.jpg";
@@ -17,6 +17,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "I help businesses grow through digital marketing, social media management, content creation and conversion-focused websites." },
       { property: "og:title", content: "Shihab Sahad — Digital Marketing Specialist" },
       { property: "og:description", content: "Strategy, content, social media and websites that drive real business growth." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -157,7 +159,7 @@ function Index() {
             <div className="reveal relative mx-auto w-full max-w-md">
               <div className="absolute -inset-6 rounded-[2.5rem] bg-spot blur-2xl" aria-hidden />
               <div className="relative overflow-hidden rounded-[2rem] border border-border glow-ring">
-                <img src={portraitAsset.url} alt="Shihab Sahad, Digital Marketing Specialist" width={1086} height={1448} className="h-full w-full object-cover" />
+                <img src={portraitUrl} alt="Shihab Sahad, Digital Marketing Specialist" width={1086} height={1448} className="h-full w-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
               </div>
               <div className="glass absolute -left-4 bottom-10 rounded-2xl px-4 py-3 md:-left-10">
