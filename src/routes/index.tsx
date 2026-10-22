@@ -19,6 +19,8 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: "Strategy, content, social media and websites that drive real business growth." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:image", content: portraitUrl },
+      { name: "twitter:image", content: portraitUrl },
     ],
   }),
   component: Index,
