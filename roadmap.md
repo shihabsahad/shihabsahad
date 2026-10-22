@@ -4,3 +4,6 @@
 - [ ] Validate phone-size layout, HTTPS and rendered search signals.
 - [ ] Prepare Search Console verification; request account authorization if needed.
 - [ ] Report domain/publication dependencies and remaining manual actions.
+
+## Hero photo
+- [x] Replace hero portrait with the newly uploaded photo, keeping card, blue glow, border and "Growth-focused" badge unchanged.
