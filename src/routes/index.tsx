@@ -361,8 +361,8 @@ function Index() {
               <a href={LI} target="_blank" rel="noopener noreferrer" className={btnGhost}><Linkedin className="h-4 w-4" /> Connect on LinkedIn</a>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-2 text-sm text-muted-foreground sm:flex-row sm:gap-8">
-              <a href={EMAIL} className="hover:text-foreground">shihabtm06@gmail.com</a>
-              <a href="tel:+916235371289" className="hover:text-foreground">+91 6235371289</a>
+              <a href={EMAIL} className="hover:text-foreground">\n</a>
+              <a href="tel:+916235371289" className="hover:text-foreground">\n</a>
             </div>
           </div>
         </section>
