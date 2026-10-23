@@ -7,6 +7,8 @@ import {
 import { portraitUrl } from "@/lib/portrait";
 import w1 from "@/assets/work-1.jpg";
 import work2Asset from "@/assets/work-2-brand-yatra.jpg.asset.json";
+// Resolve on the public Lovable host: the custom domain doesn't serve /__l5e/.
+const w2 = new URL(work2Asset.url, "https://shihabsahad.lovable.app").href;
 import w3 from "@/assets/work-3.jpg";
 import w4 from "@/assets/work-4.jpg";
 
