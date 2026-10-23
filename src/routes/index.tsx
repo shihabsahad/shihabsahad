@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import { portraitUrl } from "@/lib/portrait";
 import w1 from "@/assets/work-1.jpg";
-import w2 from "@/assets/work-2.jpg";
+import work2Asset from "@/assets/work-2-brand-yatra.jpg.asset.json";
 import w3 from "@/assets/work-3.jpg";
 import w4 from "@/assets/work-4.jpg";
 
