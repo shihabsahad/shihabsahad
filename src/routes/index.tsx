@@ -77,8 +77,8 @@ const why = [
 
 // Placeholder testimonials — replace with real client quotes
 const testimonials = [
-  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "Founder, Client Company" },
-  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "fo" },
+  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "\n" },
+  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "\n" },
   { q: "Our new website looks premium and actually converts. Working with Shihab Sahad was effortless.", n: "Rahul Menon", r: "Director, Client Business" },
 ];
 
