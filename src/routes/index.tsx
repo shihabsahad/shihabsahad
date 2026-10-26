@@ -4,11 +4,9 @@ import {
   ArrowUpRight, Menu, X, Mail, MessageCircle, Linkedin, Instagram, Megaphone, Users,
   PenTool, Monitor, MapPin, Target, Check, Quote, Sparkles, TrendingUp, Briefcase, Lightbulb,
 } from "lucide-react";
-import { portraitUrl } from "@/lib/portrait";
+import portraitAsset from "@/assets/shihab-portrait.jpeg.asset.json";
 import w1 from "@/assets/work-1.jpg";
-import work2Asset from "@/assets/work-2-brand-yatra.jpg.asset.json";
-// Resolve on the public Lovable host: the custom domain doesn't serve /__l5e/.
-const w2 = new URL(work2Asset.url, "https://shihabsahad.lovable.app").href;
+import w2 from "@/assets/work-2.jpg";
 import w3 from "@/assets/work-3.jpg";
 import w4 from "@/assets/work-4.jpg";
 
@@ -19,10 +17,6 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "I help businesses grow through digital marketing, social media management, content creation and conversion-focused websites." },
       { property: "og:title", content: "Shihab Sahad — Digital Marketing Specialist" },
       { property: "og:description", content: "Strategy, content, social media and websites that drive real business growth." },
-      { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: portraitUrl },
-      { name: "twitter:image", content: portraitUrl },
     ],
   }),
   component: Index,
@@ -51,7 +45,7 @@ const work = [
   { img: w1, n: "Nujoud General Contracting", tags: ["Digital Marketing", "Social Media", "Content Creation", "Website", "Lead Generation"], d: "Built a complete online presence for a contracting firm — from social content to a lead-focused website.", u: "https://www.nujoudgeneralcontracting.com" },
   { img: w2, n: "Brand Yatra", tags: ["Digital Marketing", "Social Media", "Content Strategy", "Brand Marketing"], d: "Content strategy and brand marketing that grew an engaged, consistent social audience.", u: "https://www.instagram.com/reel/DO5ynnFj07z/?stkn=MTBiMWd4bmx4NGl4cw==" },
   { img: w3, n: "Gate Way Associates", tags: ["Digital Marketing", "Content Creation", "Social Media"], d: "Professional content and social media positioning for a growing business consultancy.", u: "" },
-  { img: w4, n: "EcoShine", tags: ["Digital Marketing", "Content & Social Media"], d: "Social media content and brand marketing for an eco-friendly cleaning service — green, fresh and conversion-focused.", u: "" },
+  { img: w4, n: "Prestige", tags: ["Digital Marketing", "Content & Social Media"], d: "Premium content and social media work crafted to reflect a refined brand identity.", u: "" },
 ];
 
 const steps = [
@@ -77,9 +71,9 @@ const why = [
 
 // Placeholder testimonials — replace with real client quotes
 const testimonials = [
-  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "\n" },
-  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "\n" },
-  { q: "Our new website looks premium and actually converts. Working with Shihab Sahad was effortless.", n: "Rahul Menon", r: "\n" },
+  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "Founder, Client Company" },
+  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "fo" },
+  { q: "Our new website looks premium and actually converts. Working with Shihab Sahad was effortless.", n: "Rahul Menon", r: "Director, Client Business" },
 ];
 
 function useReveal() {
@@ -163,7 +157,7 @@ function Index() {
             <div className="reveal relative mx-auto w-full max-w-md">
               <div className="absolute -inset-6 rounded-[2.5rem] bg-spot blur-2xl" aria-hidden />
               <div className="relative overflow-hidden rounded-[2rem] border border-border glow-ring">
-                <img src={portraitUrl} alt="Shihab Sahad, Digital Marketing Specialist" width={1086} height={1448} className="h-full w-full object-cover" />
+                <img src={portraitAsset.url} alt="Shihab Sahad, Digital Marketing Specialist" width={1086} height={1448} className="h-full w-full object-cover" />
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-background to-transparent" />
               </div>
               <div className="glass absolute -left-4 bottom-10 rounded-2xl px-4 py-3 md:-left-10">
@@ -361,8 +355,8 @@ function Index() {
               <a href={LI} target="_blank" rel="noopener noreferrer" className={btnGhost}><Linkedin className="h-4 w-4" /> Connect on LinkedIn</a>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-2 text-sm text-muted-foreground sm:flex-row sm:gap-8">
-              <a href={EMAIL} className="hover:text-foreground">\n</a>
-              <a href="tel:+916235371289" className="hover:text-foreground">\n</a>
+              <a href={EMAIL} className="hover:text-foreground">shihabtm06@gmail.com</a>
+              <a href="tel:+916235371289" className="hover:text-foreground">+91 6235371289</a>
             </div>
           </div>
         </section>
