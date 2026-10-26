@@ -4,7 +4,7 @@ import {
   ArrowUpRight, Menu, X, Mail, MessageCircle, Linkedin, Instagram, Megaphone, Users,
   PenTool, Monitor, MapPin, Target, Check, Quote, Sparkles, TrendingUp, Briefcase, Lightbulb,
 } from "lucide-react";
-import portraitAsset from "@/assets/shihab-portrait.jpeg.asset.json";
+import portrait from "@/assets/shihab-portrait.jpeg";
 import w1 from "@/assets/work-1.jpg";
 import w2 from "@/assets/work-2.jpg";
 import w3 from "@/assets/work-3.jpg";
