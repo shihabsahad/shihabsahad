@@ -7,3 +7,6 @@
 
 ## Hero photo
 - [x] Replace hero portrait with the newly uploaded photo, keeping card, blue glow, border and "Growth-focused" badge unchanged.
+
+## Social links
+- [x] Point footer and contact LinkedIn + Instagram links at the profiles Shihab provided (clean profile URLs, no share tokens).
