@@ -25,7 +25,7 @@ export const Route = createFileRoute("/")({
 const EMAIL = "mailto:shihabtm06@gmail.com";
 const WA = "https://wa.me/916235371289";
 const LI = "https://www.linkedin.com/in/shihabsahad/";
-const IG = "https://www.instagram.com/shihab.sahad?stkn=Mjkweml6azFjZzVs";
+const IG = "https://www.instagram.com/shihab.sahad/";
 
 const nav = [
   ["Home", "home"], ["About", "about"], ["Services", "services"],
