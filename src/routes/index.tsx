@@ -71,9 +71,9 @@ const why = [
 
 // Placeholder testimonials — replace with real client quotes
 const testimonials = [
-  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "Founder, Client Company" },
-  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "fo" },
-  { q: "Our new website looks premium and actually converts. Working with Shihab Sahad was effortless.", n: "Rahul Menon", r: "Director, Client Business" },
+  { q: "Shihab Sahad transformed our social media presence. Our enquiries grew noticeably within the first few months.", n: "Ahmed Rahman", r: "" },
+  { q: "Creative, reliable and strategic. The content he created truly captured our brand's personality.", n: "Priya Nair", r: "" },
+  { q: "Our new website looks premium and actually converts. Working with Shihab Sahad was effortless.", n: "Rahul Menon", r: "" },
 ];
 
 function useReveal() {
@@ -355,8 +355,8 @@ function Index() {
               <a href={LI} target="_blank" rel="noopener noreferrer" className={btnGhost}><Linkedin className="h-4 w-4" /> Connect on LinkedIn</a>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-2 text-sm text-muted-foreground sm:flex-row sm:gap-8">
-              <a href={EMAIL} className="hover:text-foreground">shihabtm06@gmail.com</a>
-              <a href="tel:+916235371289" className="hover:text-foreground">+91 6235371289</a>
+              <a href={EMAIL} className="hover:text-foreground"></a>
+              <a href="tel:+916235371289" className="hover:text-foreground"></a>
             </div>
           </div>
         </section>
