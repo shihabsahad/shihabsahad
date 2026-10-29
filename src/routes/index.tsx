@@ -11,14 +11,61 @@ import w3 from "@/assets/work-3.jpg";
 import w4 from "@/assets/work-4.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Shihab Sahad — Digital Marketing Specialist | Portfolio" },
-      { name: "description", content: "I help businesses grow through digital marketing, social media management, content creation and conversion-focused websites." },
-      { property: "og:title", content: "Shihab Sahad — Digital Marketing Specialist" },
-      { property: "og:description", content: "Strategy, content, social media and websites that drive real business growth." },
-    ],
-  }),
+  head: () => {
+    const SITE = "https://shihabsahad.com";
+    const title = "Shihab Sahad | Digital Marketing Specialist in Kerala";
+    const desc = "Shihab Sahad is a Digital Marketing Specialist in Kerala, India, specializing in digital marketing, social media management, content creation, SEO, and website development.";
+    const img = `${SITE}/og-image.jpg`;
+    return {
+      meta: [
+        { title },
+        { name: "description", content: desc },
+        { property: "og:title", content: title },
+        { property: "og:description", content: desc },
+        { property: "og:type", content: "website" },
+        { property: "og:url", content: `${SITE}/` },
+        { property: "og:site_name", content: "Shihab Sahad" },
+        { property: "og:image", content: img },
+        { property: "og:image:width", content: "1200" },
+        { property: "og:image:height", content: "630" },
+        { property: "og:image:alt", content: "Shihab Sahad, Digital Marketing Specialist" },
+        { name: "twitter:card", content: "summary_large_image" },
+        { name: "twitter:title", content: title },
+        { name: "twitter:description", content: desc },
+        { name: "twitter:image", content: img },
+      ],
+      links: [{ rel: "canonical", href: `${SITE}/` }],
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Person",
+                "@id": `${SITE}/#person`,
+                name: "Shihab Sahad",
+                jobTitle: "Digital Marketing Specialist",
+                url: `${SITE}/`,
+                image: `${SITE}/icon-512.png`,
+                email: "mailto:shihabtm06@gmail.com",
+                address: { "@type": "PostalAddress", addressRegion: "Kerala", addressCountry: "IN" },
+                knowsAbout: ["Digital Marketing", "Social Media Management", "Content Creation", "SEO", "Website Development"],
+                sameAs: [LI, IG],
+              },
+              {
+                "@type": "WebSite",
+                "@id": `${SITE}/#website`,
+                name: "Shihab Sahad",
+                url: `${SITE}/`,
+                publisher: { "@id": `${SITE}/#person` },
+              },
+            ],
+          }),
+        },
+      ],
+    };
+  },
   component: Index,
 });
 
