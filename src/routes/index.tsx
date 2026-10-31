@@ -13,7 +13,7 @@ import w4 from "@/assets/work-4.jpg";
 export const Route = createFileRoute("/")({
   head: () => {
     const SITE = "https://shihabsahad.com";
-    const title = "Shihab Sahad | Digital Marketing Specialist in Kerala";
+    const title = "Shihab Sahad — Digital Marketing Specialist in Kerala";
     const desc = "Shihab Sahad is a Digital Marketing Specialist in Kerala, India, specializing in digital marketing, social media management, content creation, SEO, and website development.";
     const img = `${SITE}/og-image.jpg`;
     return {
